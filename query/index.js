@@ -40,7 +40,8 @@ const handleEvents = (type, data) => {
     }
 }
 
-app.get('/posts', (req,res) => {    
+app.get('/posts', (req,res) => {  
+    console.log(posts);  
     res.send(posts);
 })
 
